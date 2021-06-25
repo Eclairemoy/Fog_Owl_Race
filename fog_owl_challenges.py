@@ -101,7 +101,7 @@ def test_q4_1():
     assert get_average_xp(500, 10) == 50
 
 def test_q4_2():
-    assert get_average_xp(950, 8) == 118.75
+    assert get_average_xp(900, 30) == 30
 
 
 ############ EOF #########################################
