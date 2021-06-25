@@ -14,7 +14,12 @@ def find_average(nums):
     Returns:
     An integer that is the average of the array.
     """
-
+    sum=0
+    count = 0
+    for x in nums:
+        sum += x
+        count += 1
+    return sum / count
 
 
 def test_q1():
@@ -27,7 +32,7 @@ def test_q1_3():
     assert find_average([3,4,5,5.899]) == 4.47475
 
 ############ PROBLEM 2 #########################################
-
+# don't print given year
 def find_leap_years(year):
     """
     Cedric is trying to plan his upcoming vacations with his future kids and grandkids.
@@ -39,7 +44,15 @@ def find_leap_years(year):
     Returns:
     No return, only a print statement.
     """
-
+    year += 1
+    i = 0
+    while year % 4 != 0:
+        year += 1
+    while i < 20:
+        if (year % 100 != 0 or year % 400 == 0):
+            print(year)
+        year += 4
+        i += 1
 
 
 def test_q2_1(capfd):
@@ -69,8 +82,16 @@ def sum_integers(string):
     Returns:
     An integer that is the sum of the integers in the input string.
     """
-
-
+    sum = 0
+    rev = reversed(string)
+    pow = 1
+    for c in rev:
+        if c >= '0' and c <= '9':
+            sum += pow * int(c)
+            pow *= 10
+        else:
+            pow = 1
+    return sum
 
 def test_q3_1():
     assert sum_integers("123abc45def") == 168
@@ -96,6 +117,14 @@ def get_average_xp(xp, operators):
     Returns:
     An integer that is the average XP.
     """
+    quotient = 0
+    sum = 0
+    while sum < xp:
+        sum += operators
+        quotient += 1
+    if (sum > xp):
+        quotient -= 1
+    return quotient
 
 
 def test_q4_1():
