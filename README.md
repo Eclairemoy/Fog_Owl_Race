@@ -15,13 +15,15 @@ teams solve the problems. You have 30 minutes.
 
 ## How to use the challenge file: ##
 
+You will need Python 2.5 or later installed.
+
 1. Open `fog_owl_challenges.py`
 2. Create a virtual environment
-`python3 -m venv venv`
-3. Activate the environ
+`python -m venv venv`
+3. Activate the environment
 `source venv/bin/activate`
-4. Install pytest
-`pip3 install pytest`
+4. Install the requirements
+`pip install -r requirements.txt`
 5. Run the following command to run your code with tests
 `pytest fog_owl_challenges.py`
 
