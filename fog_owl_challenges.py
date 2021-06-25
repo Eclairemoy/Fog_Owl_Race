@@ -6,7 +6,7 @@ def find_average(nums):
     """
     The Flux Capacitor on the Fog Owl breaks.
     Make a function to calculate the average of an array of numbers
-    (they may not all be integers)
+    (they may not all be integers, i.e. some may be floats).
 
     Args:
     nums: List[]
@@ -60,7 +60,8 @@ def sum_integers(string):
     Sometimes he is given a string containing numbers and characters,
     which he does not like.
     Write a function to help Cedric play with numbers that takes in a string and
-    computes the sum of the integers embedded in the string.
+    computes the sum of the integers embedded in the string. Does not need
+    to account for negative numbers.
 
     Args:
     string: str
