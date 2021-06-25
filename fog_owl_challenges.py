@@ -1,3 +1,5 @@
+
+## Imagine you are on the Fog Owl with Cedric... ##
 ############ PROBLEM 1 #########################################
 
 def find_average(nums):
